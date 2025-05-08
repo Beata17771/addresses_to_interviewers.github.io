@@ -1,3 +1,6 @@
+### The problem of assigning the optimal number of addresses to interviewers ###
+### Beata Borisova ###
+
 library(osrm)
 library(readxl)
 library(lpSolve)
@@ -190,3 +193,5 @@ map_dist <- create_map(df_final_labeled, pref= "Dist_LABEL_")
 map_time <- create_map(df_final_labeled, pref = "Time_LABEL_")
 map_dist
 map_time
+
+### THE END ###
