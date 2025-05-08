@@ -58,7 +58,7 @@ A_n <- rbind(A_1, do.call(cbind, replicate(n_code, A_2, simplify = FALSE)))
 A <- rbind(A_n, rep(1, times = n_address*n_code)) 
 
 k <- 11
-B <- c(rep(20, times = max(n_code - 1, 0)), k, rep(1, times = n_address), n_address)
+B <- c(rep(20, times = max(n_code-1, 0)), k, rep(1, times = n_address), n_address)
 
 dir <- c(rep("<=", times = n_code), rep("=", times = n_address+1))
 
@@ -130,7 +130,7 @@ image(t(mat_dist_sol),
       xlab = "Addresses",
       ylab = "")
 
-label_posit<- seq(0, 1, length.out = n_code)
+label_posit <- seq(0, 1, length.out = n_code)
 labels <- paste("Interviewer V_", 1:n_code, sep = "")
 
 mtext(text = labels,
